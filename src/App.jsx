@@ -5,7 +5,7 @@ import { Routes, Route } from 'react-router-dom'; //
 import Header from './components/Header'; 
 import VistaCarrito from './pages/Carrito';
 import Productos from './pages/Productos';
-
+import Inicio from './pages/Inicio';
 // DESCOMENTEN A MEDIDA QUE VAYAN CREANDO LAS PÁGINAS
 // import Inicio from './pages/Inicio';
 
@@ -93,12 +93,8 @@ function App() {
             {/* 3. SPA(Single Page Application) como pide el enunciado */}
             <Routes>
                 {/* RUTA INICIO (ANDA PERO FALTA IMPLEMENTAR VISUALES)*/}
-                <Route path="/" element={
-                    <div className="text-center mt-5">
-                        <h1>Bienvenido a nuestra Tienda</h1>
-                        <p>Elegí la opción "Catálogo" en el menú para ver nuestros productos.</p>
-                    </div>
-                } />
+                <Route path="/" element={<Inicio />} />
+                
 
                 {/* RUTA DEL CATÁLOGO(FUNCIONANDO) */}
                 <Route path="/productos" element={<Productos agregarAlCarrito={agregarAlCarrito} />} />
