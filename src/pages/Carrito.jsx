@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Container, Table } from 'react-bootstrap';
-
+import { Link } from 'react-router-dom';
 
 function VistaCarrito({ carrito, eliminarDelCarrito, sumarCantidad, restarCantidad }) {
     
@@ -59,6 +59,16 @@ function VistaCarrito({ carrito, eliminarDelCarrito, sumarCantidad, restarCantid
                     <div className="d-flex justify-content-end mt-4">
                         <h3>Total a pagar: ${totalPagar}</h3>
                     </div>
+                    <div className="d-flex justify-content-end mt-3">
+                        <Button
+                            as={Link}
+                            to="/checkout"
+                            variant="success"
+                            size="lg"
+                        >
+                            Finalizar Compra
+                    </Button>
+</div>
                 </>
             )}
         </Container>

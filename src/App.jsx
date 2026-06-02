@@ -10,7 +10,7 @@ import Inicio from './pages/Inicio';
 // import Inicio from './pages/Inicio';
 
 // import DetalleProducto from './pages/DetalleProducto';
-// import FormularioCompra from './components/FormularioCompra';
+import FormularioCompra from './components/FormularioCompra';
 
 
 //ACÁ VA LA LÓGICA PRINCIPAL DE LA PÁGINA, ACA SE MANEJA EL ESTADO DEL CARRITO, LAS FUNCIONES PARA AGREGAR, ELIMINAR, SUMAR Y RESTAR PRODUCTOS, Y LA LÓGICA DEL TOAST DE AVISO AL USUARIO. 
@@ -114,7 +114,15 @@ function App() {
                 {/* ============================================================== */}
                 
                 {/* <Route path="/producto/:id" element={<DetalleProducto agregarAlCarrito={agregarAlCarrito} />} /> */}
-                {/* <Route path="/checkout" element={<FormularioCompra carrito={carrito} vaciarCarrito={vaciarCarrito} />} /> */}
+                <Route
+                    path="/checkout"
+                    element={
+                        <FormularioCompra
+                            carrito={carrito}
+                           vaciarCarrito={vaciarCarrito}
+                    />
+    }
+/>
             </Routes>
         </>
     );
