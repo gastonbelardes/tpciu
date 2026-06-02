@@ -1,30 +1,43 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import Badge from 'react-bootstrap/Badge'; 
+import { Link } from 'react-router-dom'; 
 
-function Header() {
+function Header({ carrito = [] }) {
+  
+  const cantidadTotal = carrito.reduce((acumulador, item) => acumulador + item.cantidad, 0);
+
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary" sticky="top">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        
+        <Navbar.Brand as={Link} to="/">Mi Tienda</Navbar.Brand>
+        
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
+         
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+            {/* Enlace a Inicio */}
+            {/* reemplazamos href por Link y to para que no recargue la página al hacer click */}
+            <Nav.Link as={Link} to="/">Inicio</Nav.Link>
+            
+            {/* Enlace al catálogo */}
+            <Nav.Link as={Link} to="/productos">Catálogo</Nav.Link>
           </Nav>
+
+          {/* Enlace al carrito con el numerito de cantidad total */}
+          <Nav>
+            <Nav.Link as={Link} to="/carrito">
+              🛒 Mi Changuito
+              {cantidadTotal > 0 && (
+                <Badge bg="danger" className="ms-2">
+                  {cantidadTotal}
+                </Badge>
+              )}
+            </Nav.Link>
+          </Nav>
+
         </Navbar.Collapse>
       </Container>
     </Navbar>

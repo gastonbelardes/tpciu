@@ -40,7 +40,7 @@ function VistaCarrito({ carrito, eliminarDelCarrito, sumarCantidad, restarCantid
                                         
                                         <Button variant="outline-secondary" size="sm" className="me-2" onClick={() => restarCantidad(item.id)}>-</Button>
                                         {item.cantidad}
-                                        <Button variant="outline-secondary" size="sm" className="ms-2" onClick={() => sumarCantidad(item.id)}>+</Button>
+                                        <Button variant="outline-secondary" size="sm" className="ms-2" onClick={() => sumarCantidad(item.id)} disabled={item.cantidad >= item.stock}>+</Button>
                                     </td>
                                     
                                     
