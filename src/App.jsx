@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Toast, ToastContainer } from 'react-bootstrap';
 import { Routes, Route } from 'react-router-dom'; // 
 
-import Header from './components/Header'; 
+import MiNavbar from './components/Navbar'; 
 import VistaCarrito from './pages/Carrito';
 import Productos from './pages/Productos';
 import Inicio from './pages/Inicio';
@@ -78,8 +78,8 @@ function App() {
 
     return (
         <>
-            {/* 1. Header recibe el carrito para actualizar el numerito */}
-            <Header carrito={carrito} />
+            {/* 1. Navbar recibe el carrito para actualizar el numerito del carrito */}
+            <MiNavbar carrito={carrito} />
             
             {/* 2. Toast fachero que avisa al usuario cuando agregan o eliminan productos del carrito, desaparece automáticamente */}
             <ToastContainer position="bottom-end" className="p-3" style={{ zIndex: 1000, position: 'fixed' }}>

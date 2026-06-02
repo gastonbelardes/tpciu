@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Badge from 'react-bootstrap/Badge'; 
 import { Link } from 'react-router-dom'; 
 
-function Header({ carrito = [] }) {
+function MiNavbar({ carrito = [] }) {
   
   const cantidadTotal = carrito.reduce((acumulador, item) => acumulador + item.cantidad, 0);
 
@@ -44,4 +44,4 @@ function Header({ carrito = [] }) {
   );
 }
 
-export default Header;
+export default MiNavbar;
