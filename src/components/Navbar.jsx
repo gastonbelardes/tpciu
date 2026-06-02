@@ -24,6 +24,9 @@ function MiNavbar({ carrito = [] }) {
             
             {/* Enlace al catálogo */}
             <Nav.Link as={Link} to="/productos">Catálogo</Nav.Link>
+
+            {/* Enlace al contacto */}
+            <Nav.Link as={Link} to="/contacto">Contacto</Nav.Link>
           </Nav>
 
           {/* Enlace al carrito con el numerito de cantidad total */}

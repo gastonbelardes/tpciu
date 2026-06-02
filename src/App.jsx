@@ -6,6 +6,7 @@ import MiNavbar from './components/Navbar';
 import VistaCarrito from './pages/Carrito';
 import Productos from './pages/Productos';
 import Inicio from './pages/Inicio';
+import Contacto from './pages/Contacto';
 // DESCOMENTEN A MEDIDA QUE VAYAN CREANDO LAS PÁGINAS
 // import Inicio from './pages/Inicio';
 
@@ -98,6 +99,9 @@ function App() {
 
                 {/* RUTA DEL CATÁLOGO(FUNCIONANDO) */}
                 <Route path="/productos" element={<Productos agregarAlCarrito={agregarAlCarrito} />} />
+
+                {/* RUTA DEL CONTACTO*/}
+                <Route path="/contacto" element={<Contacto  />} />
                 
                 {/* RUTA DEL CARRITO(FUNCIONANDO) */}
                 <Route path="/carrito" element={
