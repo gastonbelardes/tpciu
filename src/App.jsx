@@ -3,12 +3,12 @@ import { Toast, ToastContainer } from 'react-bootstrap';
 import { Routes, Route } from 'react-router-dom'; // 
 
 import Header from './components/Header'; 
-import Contenido from './components/Contenido';
 import VistaCarrito from './pages/Carrito';
+import Productos from './pages/Productos';
 
 // DESCOMENTEN A MEDIDA QUE VAYAN CREANDO LAS PÁGINAS
 // import Inicio from './pages/Inicio';
-// import Productos from './pages/Productos';
+
 // import DetalleProducto from './pages/DetalleProducto';
 // import FormularioCompra from './components/FormularioCompra';
 
@@ -101,7 +101,7 @@ function App() {
                 } />
 
                 {/* RUTA DEL CATÁLOGO(FUNCIONANDO) */}
-                <Route path="/productos" element={<Contenido agregarAlCarrito={agregarAlCarrito} />} />
+                <Route path="/productos" element={<Productos agregarAlCarrito={agregarAlCarrito} />} />
                 
                 {/* RUTA DEL CARRITO(FUNCIONANDO) */}
                 <Route path="/carrito" element={

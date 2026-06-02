@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Badge, Container, Row, Col, Form } from "react-bootstrap";
 
-import ProductoCard from "./Card"; 
+import ProductoCard from "../components/Card"; 
 import { productos } from "../data/productos"; 
 
 
-function Contenido({ agregarAlCarrito }) {
+function Productos({ agregarAlCarrito }) {
     
     
     const [busqueda, setBusqueda] = useState("");
@@ -47,4 +47,4 @@ function Contenido({ agregarAlCarrito }) {
     );
 }
 
-export default Contenido;
+export default Productos;
