@@ -1,17 +1,31 @@
 import React, { useState } from "react";
 import { Badge, Container, Row, Col, Form } from "react-bootstrap";
-
+import { useSearchParams } from 'react-router-dom';
 import ProductoCard from "../components/Card";
 import { productos } from "../data/productos";
 
 function Productos({ agregarAlCarrito }) {
     const [busqueda, setBusqueda] = useState("");
+    
+    const [searchParams] = useSearchParams();
+
+    const categoriaSeleccionada = searchParams.get("categoria"); 
 
     const productosFiltrados = productos.filter(producto => {
         
-        return producto.nombre
-            .toLowerCase()
-            .includes(busqueda.toLowerCase());
+        if (!producto.nombre) return false; 
+        
+        
+        const coincideBusqueda = producto.nombre.toLowerCase().includes(busqueda.toLowerCase());
+
+        
+        
+        const coincideCategoria = categoriaSeleccionada 
+            ? producto.tags && producto.tags.includes(categoriaSeleccionada) 
+            : true;
+
+        
+        return coincideBusqueda && coincideCategoria;
     });
 
     return (
