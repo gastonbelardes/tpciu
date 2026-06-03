@@ -17,7 +17,7 @@ function Productos({ agregarAlCarrito }) {
     return (
         <Container className="mt-4">
             
-            <div className="d-flex justify-content-between align-items-center mb-4">
+            <div className="justify-content-center align-items-center">
                 <h2>Catálogo <Badge bg="primary">{productosFiltrados.length}</Badge></h2>
                 
                 <Form.Control 
