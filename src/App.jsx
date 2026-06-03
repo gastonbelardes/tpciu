@@ -29,16 +29,10 @@ function App() {
         if (productoExistente) {
 
             if (productoExistente.cantidad >= productoSeleccionado.stock) {
-<<<<<<< HEAD
-                avisarUsuario(
-                    `¡Ups! Solo hay ${productoSeleccionado.stock} unidades de "${productoSeleccionado.nombre}" en stock.`
-                );
-                return;
-=======
+
                 // Ahora solo agrega si hay stock, sino muestra un toast avisando que no hay mas stock.
                 avisarUsuario(`¡Ups! Solo hay ${productoSeleccionado.stock} unidades de "${productoSeleccionado.nombre}" en stock.`);
                 return; // Return para no agregar más al carrito en caso de que se alcance el límite de stock
->>>>>>> ebccf6bf27470b14331544f7c9f3231bc6715ce8
             }
 
             setCarrito(
