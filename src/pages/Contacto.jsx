@@ -1,4 +1,4 @@
-import { Container, Form,Col, Row , Card, Button, Image} from "react-bootstrap"
+import { Container, Form,Col, Row , Card, Button, Image,Badge} from "react-bootstrap"
 function Contacto(){
     return(
     <Container>
@@ -30,13 +30,13 @@ function Contacto(){
                     <Button variant="primary">Enviar</Button>
                 </Form>
             </Col>
-            <Col md={4} className="ps-4" > 
+            <Col md={4} className="ps-4 text-center" > 
                 <Card>
                     <Card.Body>
-                        <Row>
-                            <p>Encontranos en nuestras redes sociales</p>
+                        <Row className="mb-2" >
+                            <Badge bg="primary">Encontranos en nuestras redes sociales</Badge>
                         </Row>
-                        <Row className="justify-content-center align-items-center">
+                        <Row className="justify-content-center align-items-center mb-3">
                             <Col xs="auto" >
                                 <Image src="/instagram.png" /> 
                             </Col>
@@ -48,7 +48,7 @@ function Contacto(){
                             </Col>
                         </Row>
                         <Row>
-                            <p>Visitanos en nuestras oficinas</p>
+                           <Badge bg="primary">Visitanos en nustras oficinas</Badge>
                         </Row>
                         <Row>
                             <iframe
