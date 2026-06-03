@@ -34,6 +34,7 @@ function App() {
         if (productoExistente) {
             //Verificamos si ya alcanzó el límite de stock
             if (productoExistente.cantidad >= productoSeleccionado.stock) {
+                // Ahora solo agrega si hay stock, sino muestra un toast avisando que no hay mas stock.
                 avisarUsuario(`¡Ups! Solo hay ${productoSeleccionado.stock} unidades de "${productoSeleccionado.nombre}" en stock.`);
                 return; // Return para no agregar más al carrito en caso de que se alcance el límite de stock
             }
@@ -57,7 +58,6 @@ function App() {
 
     const sumarCantidad = (idProducto) => {
         setCarrito(carrito.map(item => 
-            // Ahora solo suma si hay stock, sino muestra un toast avisando que no hay mas stock.
             item.id === idProducto && item.cantidad < item.stock
                 ? { ...item, cantidad: item.cantidad + 1 } 
                 : item
