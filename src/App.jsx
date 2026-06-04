@@ -9,6 +9,7 @@ import Inicio from './pages/Inicio';
 import Contacto from './pages/Contacto';
 import Footer from './components/Footer';
 import FormularioCompra from './components/FormularioCompra';
+import DetalleProducto from "./pages/DetalleProducto";
 
 function App() {
 
@@ -119,57 +120,50 @@ function App() {
 
             <Routes>
 
-                <Route
-                    path="/"
-                    element={<Inicio />}
-                />
+                    {/* Inicio */}
+                    <Route path="/" element={<Inicio />} />
 
-                <Route
-                    path="/productos"
-                    element={
-                        <Productos
-                            agregarAlCarrito={agregarAlCarrito}
-                        />
-                    }
-                />
+                    {/* Catálogo */}
+                    <Route 
+                        path="/productos" 
+                        element={<Productos agregarAlCarrito={agregarAlCarrito} />} 
+                    />
 
-                <Route
-                    path="/contacto"
-                    element={<Contacto />}
-                />
+                    {/* Detalle producto */}
+                    <Route 
+                        path="/producto/:id" 
+                        element={<DetalleProducto agregarAlCarrito={agregarAlCarrito} />} 
+                    />
 
-                <Route
-                    path="/carrito"
-                    element={
+                    {/* Contacto */}
+                    <Route path="/contacto" element={<Contacto />} />
+
+                    {/* Carrito */}
+                    <Route 
+                        path="/carrito"
+                        element={
                         <VistaCarrito
                             carrito={carrito}
                             eliminarDelCarrito={eliminarDelCarrito}
                             sumarCantidad={sumarCantidad}
                             restarCantidad={restarCantidad}
                         />
-                    }
-                />
+                        }
+                    />
 
-                {/* <Route
-                    path="/producto/:id"
-                    element={
-                        <DetalleProducto
-                            agregarAlCarrito={agregarAlCarrito}
-                        />
-                    }
-                /> */}
-
-                <Route
-                    path="/checkout"
-                    element={
+                    {/* Checkout */}
+                    <Route 
+                        path="/checkout"
+                        element={
                         <FormularioCompra
                             carrito={carrito}
                             vaciarCarrito={vaciarCarrito}
                         />
-                    }
-                />
+                        }
+                    />
 
             </Routes>
+
 
             <Footer />
         </>

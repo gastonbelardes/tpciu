@@ -71,7 +71,7 @@ function MiNavbar({ carrito = [] }) {
                             ⌨️ Periféricos
                         </ListGroup.Item>
                         
-                        <ListGroup.Item action as={Link} to="/productos?categoria=Placas" onClick={handleClose}>
+                        <ListGroup.Item action as={Link} to="/productos?categoria=Placas de video" onClick={handleClose}>
                             🎮 Placas de Video
                         </ListGroup.Item>
                         

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Badge, Container, Row, Col, Form } from "react-bootstrap";
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams,Link } from 'react-router-dom';
 import ProductoCard from "../components/ProductoCard";
 import { productos } from "../data/productos";
 
@@ -47,7 +47,6 @@ function Productos({ agregarAlCarrito }) {
                     <Col md={4} key={p.id}>
                         <ProductoCard
                             p={p}
-                            agregarAlCarrito={agregarAlCarrito}
                         />
                     </Col>
                 ))}

@@ -17,14 +17,17 @@ function ProductoCard({ p, agregarAlCarrito }) {
                 <h4 className="mt-auto mb-3">${p.precio}</h4>
                 
                 {/* Validación de stock para el botón */}
-                <Button 
-                    variant={p.stock > 0 ? "primary" : "secondary"} 
-                    onClick={() => agregarAlCarrito(p)}
-                    disabled={p.stock === 0} // Si no hay stock, no se puede hacer click
-                    className="w-100"
-                >
-                    {p.stock > 0 ? "Agregar al carrito" : "Sin stock"}
-                </Button>
+              
+                <Link to={`/producto/${p.id}`}>
+                        <Button 
+                            variant={p.stock > 0 ? "primary" : "secondary"} 
+                            disabled={p.stock === 0}
+                            className="w-100"
+                        >
+                            {p.stock > 0 ? "Comprar" : "Sin stock"}
+                        </Button>
+                    </Link>
+
             </Card.Body>
         </Card>
     );
