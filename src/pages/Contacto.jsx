@@ -33,10 +33,10 @@ function Contacto(){
             <Col md={4} className="ps-4 text-center" > 
                 <Card>
                     <Card.Body>
-                        <Row className="mb-2" >
-                            <Badge bg="primary">Encontranos en nuestras redes sociales</Badge>
+                        <Row className="mb-4" >
+                            <Badge  pill bg="primary"><h5>Encontranos en nuestras redes sociales</h5></Badge>
                         </Row>
-                        <Row className="justify-content-center align-items-center mb-3">
+                        <Row className="justify-content-center align-items-center mb-4">
                             <Col xs="auto" >
                                 <Image src="/instagram.png" /> 
                             </Col>
@@ -48,7 +48,7 @@ function Contacto(){
                             </Col>
                         </Row>
                         <Row>
-                           <Badge bg="primary">Visitanos en nustras oficinas</Badge>
+                           <Badge pill bg="primary"><h5>Visitanos en nustras oficinas</h5></Badge>
                         </Row>
                         <Row>
                             <iframe
