@@ -6,7 +6,7 @@ function Contacto(){
             <Col>
                 <Card className="text-center">
                     <Card.Body>
-                        <Card.Title>¡Contactanos!</Card.Title>
+                        <Card.Title><h1>¡Contactanos!</h1></Card.Title>
                         <Card.Text>Nuestro equipo atenderá tus dudas y/o quejas y se pondrá en contacto contigo enseguida.</Card.Text>
                     </Card.Body>
                 </Card>
@@ -16,15 +16,15 @@ function Contacto(){
             <Col md={8}>
                 <Form>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                        <Form.Label>Correo electrónico</Form.Label>
+                        <Form.Label><Badge bg="secondary"><h5>Correo Electrónico</h5></Badge></Form.Label>
                         <Form.Control type="email" placeholder="name@example.com" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                        <Form.Label>Asunto</Form.Label>
+                        <Form.Label><Badge bg="secondary"><h5>Asunto</h5></Badge></Form.Label>
                         <Form.Control type="text"  />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                        <Form.Label>Mensaje</Form.Label>
+                        <Form.Label><Badge bg="secondary"><h5>Mensaje</h5></Badge></Form.Label>
                         <Form.Control as="textarea" rows={3} />
                     </Form.Group>
                     <Button variant="primary">Enviar</Button>
@@ -34,7 +34,7 @@ function Contacto(){
                 <Card>
                     <Card.Body>
                         <Row className="mb-4" >
-                            <Badge  pill bg="primary"><h5>Encontranos en nuestras redes sociales</h5></Badge>
+                            <Badge  pill bg="primary"><h6>Encontranos en nuestras Redes</h6></Badge>
                         </Row>
                         <Row className="justify-content-center align-items-center mb-4">
                             <Col xs="auto" >
@@ -48,7 +48,7 @@ function Contacto(){
                             </Col>
                         </Row>
                         <Row>
-                           <Badge pill bg="primary"><h5>Visitanos en nustras oficinas</h5></Badge>
+                           <Badge pill bg="primary"><h6>Visitanos en nustras oficinas</h6></Badge>
                         </Row>
                         <Row>
                             <iframe
