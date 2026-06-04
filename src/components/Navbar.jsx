@@ -29,7 +29,7 @@ function MiNavbar({ carrito = [] }) {
                         <span className="me-2 fs-5">☰</span> Productos
                     </Button>
 
-                    <Navbar.Brand as={Link} to="/">Mi Tienda</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/">Tech Store</Navbar.Brand>
                     
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

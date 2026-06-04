@@ -5,7 +5,7 @@ import { Carousel, Container } from 'react-bootstrap';
 function Inicio() {
     return (
         <Container className="mt-4">
-            <h1 className="text-center mb-4">Bienvenidos a nuestra Tienda</h1>
+            <h1 className="text-center mb-4">Bienvenidos a Tech Store</h1>
             {/* EL CAROUSEL DE OFERTAS/ITEMS DESTACADOS, SI NO LE GUSTA, LO BORRAMOS */}
             <Carousel className="shadow-lg rounded">
                 <Carousel.Item>
