@@ -23,3 +23,14 @@ body {
     opacity: 0.9;
 }
 
+.btn-hover-verde:hover {
+    background-color: #7cb314 !important;
+    border-color: #7cb314 !important;
+    color: white !important;
+}
+
+.link-custom {
+    color: #ffffff !important;
+    
+}
+

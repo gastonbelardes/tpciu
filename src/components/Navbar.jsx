@@ -1,46 +1,51 @@
 import React, { useState } from 'react';
-// Agrupamos todos los imports de Bootstrap en una sola línea
 import { Container, Nav, Navbar, Badge, Button, Offcanvas, ListGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom'; 
 
 function MiNavbar({ carrito = [] }) {
-    // 1. Estado para controlar si el menú lateral (Offcanvas) está abierto o cerrado
+   
     const [mostrarMenu, setMostrarMenu] = useState(false);
 
-    // 2. Funciones para abrir y cerrar el menú
     const handleClose = () => setMostrarMenu(false);
     const handleShow = () => setMostrarMenu(true);
   
-    // Cálculo del carrito que ya tenían hecho (¡impecable el reduce, por cierto!)
     const cantidadTotal = carrito.reduce((acumulador, item) => acumulador + item.cantidad, 0);
 
     return (
         <>
             {/* LA BARRA DE NAVEGACIÓN SUPERIOR */}
-            <Navbar expand="lg" className="bg-body-tertiary" sticky="top">
+            <Navbar expand="lg" bg="dark" data-bs-theme="dark" sticky="top">
                 <Container>
                     
                     {/* Menu hamburguesa desplegable */}
                     <Button 
-                        variant="outline-dark" 
-                        className="me-3 d-flex align-items-center fw-bold" 
+                        variant="outline-light" 
+                        className="btn-hover-verde me-3 d-flex align-items-center fw-bold" 
                         onClick={handleShow}
                     >
                         <span className="me-2 fs-5">☰</span> Productos
                     </Button>
 
-                    <Navbar.Brand as={Link} to="/">Tech Store</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/">
+                        <img
+                            src="/logofinal.png" 
+                            height="120" 
+                            style={{ marginTop: "-40px", marginBottom: "-40px", marginLeft: "-40px", marginRight: "-40px" }}
+                            className="d-inline-block align-top"
+                            alt="Logo TechStore"
+                        />
+                    </Navbar.Brand>
                     
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         
                         <Nav className="me-auto">
-                            <Nav.Link as={Link} to="/">Inicio</Nav.Link>
-                            <Nav.Link as={Link} to="/contacto">Contacto</Nav.Link>
+                            <Nav.Link as={Link} to="/" className="link-custom">Inicio</Nav.Link>
+                            <Nav.Link as={Link} to="/contacto" className="link-custom">Contacto</Nav.Link>
                         </Nav>
 
                         <Nav>
-                            <Nav.Link as={Link} to="/carrito">
+                            <Nav.Link as={Link} to="/carrito" className="link-custom">
                                 🛒 Mi Changuito
                                 {cantidadTotal > 0 && (
                                     <Badge bg="danger" className="ms-2">

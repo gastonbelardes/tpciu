@@ -1,10 +1,11 @@
 import React from 'react';
 import { Carousel, Container, Row, Col , Card,Badge,Image} from 'react-bootstrap';
+import "../App.css"
 
 
 function Inicio() {
     return (
-        <Container className="mt-4">
+        <Container className="mt-5">
             <h1 className="text-center mb-4">Bienvenidos a Tech Store</h1>
             {/* EL CAROUSEL DE OFERTAS/ITEMS DESTACADOS, SI NO LE GUSTA, LO BORRAMOS */}
             <Carousel className="shadow-lg rounded">
@@ -49,7 +50,7 @@ function Inicio() {
                     <Card>
                         <Card.Body>
                             <Row>
-                                <Badge bg='secondary'>
+                                <Badge bg='secondary' className="badge-custom">
                                     <h4>Todos los dias</h4>
                                 </Badge>
                             </Row>
@@ -66,7 +67,7 @@ function Inicio() {
                     <Card>
                         <Card.Body>
                             <Row>
-                                <Badge bg='secondary'>
+                                <Badge bg='secondary' className="badge-custom">
                                     <h4>Todos los dias</h4>
                                 </Badge>
                             </Row>
@@ -83,7 +84,7 @@ function Inicio() {
                     <Card>
                         <Card.Body>
                             <Row>
-                                <Badge bg='secondary'>
+                                <Badge bg='secondary' className="badge-custom">
                                     <h4>Todos los dias</h4>
                                 </Badge>
                             </Row>
