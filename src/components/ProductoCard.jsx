@@ -6,7 +6,11 @@ function ProductoCard({ p, agregarAlCarrito }) {
     return (
         <Card className="h-100 shadow-sm">
             {/* Imagen(falta) */}
-            <Card.Img variant="top" src={p.imagen} alt={p.nombre} />
+            <Card.Img
+                variant="top"
+                src={p.imagenes?.[0] || p.imagen}
+                alt={p.nombre}
+            />
             
             <Card.Body className="d-flex flex-column">
                 <Card.Title className="titulo">{p.nombre}</Card.Title>
