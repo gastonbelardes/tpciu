@@ -1,4 +1,6 @@
 import { Container, Form,Col, Row , Card, Button, Image,Badge} from "react-bootstrap"
+import "../App.css"
+
 function Contacto(){
     return(
     <Container>
@@ -16,25 +18,25 @@ function Contacto(){
             <Col md={8}>
                 <Form>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                        <Form.Label><Badge bg="secondary"><h5>Correo Electrónico</h5></Badge></Form.Label>
+                        <Form.Label><Badge bg="secondary" className="badge-custom"><h5>Correo Electrónico</h5></Badge></Form.Label>
                         <Form.Control type="email" placeholder="name@example.com" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                        <Form.Label><Badge bg="secondary"><h5>Asunto</h5></Badge></Form.Label>
+                        <Form.Label><Badge bg="secondary" className="badge-custom"><h5>Asunto</h5></Badge></Form.Label>
                         <Form.Control type="text"  />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                        <Form.Label><Badge bg="secondary"><h5>Mensaje</h5></Badge></Form.Label>
+                        <Form.Label><Badge bg="secondary" className="badge-custom"><h5>Mensaje</h5></Badge></Form.Label>
                         <Form.Control as="textarea" rows={3} />
                     </Form.Group>
-                    <Button variant="primary">Enviar</Button>
+                    <Button variant="primary" className="btn-primary">Enviar</Button>
                 </Form>
             </Col>
             <Col md={4} className="ps-4 text-center" > 
                 <Card>
                     <Card.Body>
                         <Row className="mb-4" >
-                            <Badge  pill bg="primary"><h6>Encontranos en nuestras Redes</h6></Badge>
+                            <Badge  pill bg="primary" className="badge-custom"><h6>Encontranos en nuestras Redes</h6></Badge>
                         </Row>
                         <Row className="justify-content-center align-items-center mb-4">
                             <Col xs="auto" >
@@ -47,8 +49,8 @@ function Contacto(){
                                 <Image src="/facebook.png"/>
                             </Col>
                         </Row>
-                        <Row>
-                           <Badge pill bg="primary"><h6>Visitanos en nustras oficinas</h6></Badge>
+                        <Row className="mb-4">
+                           <Badge pill bg="primary" className="badge-custom"><h6>Visitanos en nuestras oficinas</h6></Badge>
                         </Row>
                         <Row>
                             <iframe

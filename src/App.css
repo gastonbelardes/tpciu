@@ -1,5 +1,25 @@
-h2{
-  color: rgb(80, 240, 16);
-  text-align: center;
-  font-size: 50px;
+:root {
+    --color-principal: #76b900;
+    --color-secundario: #1a1a1a;
+    --color-fondo: #f8f9fa;
+    --color-texto: #333;
 }
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+.badge-custom {
+    background-color: var(--color-principal) !important;
+    color: #fff !important;
+}
+.btn-primary {
+    background-color: var(--color-principal) !important;
+    border-color: var(--color-principal) !important;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+

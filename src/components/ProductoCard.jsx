@@ -1,12 +1,14 @@
 import React from 'react';
 import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import "./ProductoCard.css"; 
 
 function ProductoCard({ p, agregarAlCarrito }) {
     return (
-        <Card className="h-100 shadow-sm">
+        <Card className="product-card h-100 shadow-sm">
             {/* Imagen(falta) */}
             <Card.Img
+                className="product-img"
                 variant="top"
                 src={p.imagenes?.[0] || p.imagen}
                 alt={p.nombre}

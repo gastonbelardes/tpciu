@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Toast, ToastContainer } from 'react-bootstrap';
 import { Routes, Route } from 'react-router-dom';
+import './App.css';
 
 
 import MiNavbar from './components/Navbar';

@@ -32,7 +32,7 @@ function Productos({ agregarAlCarrito }) {
             <div className="text-center mb-4">
                 <h2>
                     Catálogo{" "}
-                    <Badge bg="primary">
+                    <Badge bg="primary" className="btn-primary">
                         {productosFiltrados.length}
                     </Badge>
                 </h2>
