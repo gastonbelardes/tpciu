@@ -63,15 +63,15 @@ function MiNavbar({ carrito = [] }) {
                 <Offcanvas.Body className="p-0">
                     <ListGroup variant="flush">
                         
-                        <ListGroup.Item action as={Link} to="/productos?categoria=Monitores" onClick={handleClose}>
+                        <ListGroup.Item action as={Link} to="/productos?categoria=monitores" onClick={handleClose}>
                             🖥️ Monitores y Pantallas
                         </ListGroup.Item>
                         
-                        <ListGroup.Item action as={Link} to="/productos?categoria=Perifericos" onClick={handleClose}>
+                        <ListGroup.Item action as={Link} to="/productos?categoria=perifericos" onClick={handleClose}>
                             ⌨️ Periféricos
                         </ListGroup.Item>
                         
-                        <ListGroup.Item action as={Link} to="/productos?categoria=Placas de video" onClick={handleClose}>
+                        <ListGroup.Item action as={Link} to="/productos?categoria=placas" onClick={handleClose}>
                             🎮 Placas de Video
                         </ListGroup.Item>
                         

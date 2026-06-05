@@ -9,19 +9,23 @@ function Productos({ agregarAlCarrito }) {
     
     const [busquedaParams] = useSearchParams();
 
-    const categoriaSeleccionada = busquedaParams.get("categoria"); 
+    
+    const categoriaSeleccionada = busquedaParams
+            .get("categoria")
+            ?.toLowerCase();
+
 
     const productosFiltrados = productos.filter(producto => {
-        
-        const coincideBusqueda = producto.nombre.toLowerCase().includes(busqueda.toLowerCase());
+            const coincideBusqueda = producto.nombre
+                .toLowerCase()
+                .includes(busqueda.toLowerCase());
 
-        const coincideCategoria = categoriaSeleccionada 
-            ? producto.tags && producto.tags.includes(categoriaSeleccionada) 
-            : true;
+            const coincideCategoria = categoriaSeleccionada
+                ? producto.tags?.includes(categoriaSeleccionada)
+                : true;
 
-        
-        return coincideBusqueda && coincideCategoria;
-    });
+            return coincideBusqueda && coincideCategoria;
+            });
 
     return (
         <Container className="mt-4">
@@ -42,15 +46,18 @@ function Productos({ agregarAlCarrito }) {
                 />
             </div>
 
-            <Row className="g-5 mb-5">
+           
+                <Row className="g-5 mb-5">
                 {productosFiltrados.map(p => (
                     <Col md={4} key={p.id}>
-                        <ProductoCard
-                            p={p}
-                        />
+                    <ProductoCard 
+                        p={p}
+                        agregarAlCarrito={agregarAlCarrito}
+                    />
                     </Col>
                 ))}
-            </Row>
+                </Row>
+
 
             {productosFiltrados.length === 0 && (
                 <div className="text-center w-100 mb-5">

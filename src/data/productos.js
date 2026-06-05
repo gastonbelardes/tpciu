@@ -6,7 +6,7 @@ export const productos = [
     imagen: "https://http2.mlstatic.com/D_NQ_NP_2X_661489-MLA49783544128_042022-F.webp",
     descripcion: "Teclado mecánico con switches azules y retroiluminación RGB.",
     stock: 5,
-    tags: ["Perifericos", "Teclados"]
+    tags: ["perifericos"]
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const productos = [
     imagen: "https://http2.mlstatic.com/D_NQ_NP_2X_661489-MLA49783544128_042022-F.webp",
     descripcion: "Mouse ergonómico con sensor óptico de alta precisión.",
     stock: 10,
-    tags: ["Perifericos", "Mouse"]
+    tags: ["perifericos"]
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const productos = [
     imagen: "https://http2.mlstatic.com/D_NQ_NP_2X_661489-MLA49783544128_042022-F.webp",
     descripcion: "Auriculares con sonido envolvente y micrófono integrado.",
     stock: 8,
-    tags: ["Perifericos", "Audio"]
+    tags:["perifericos"]
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ export const productos = [
     imagen: "https://http2.mlstatic.com/D_NQ_NP_2X_661489-MLA49783544128_042022-F.webp",
     descripcion: "Cámara ideal para streaming y videollamadas.",
     stock: 0,
-    tags: ["Perifericos"]
+    tags: ["perifericos"]
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ export const productos = [
     imagen: "https://http2.mlstatic.com/D_NQ_NP_2X_661489-MLA49783544128_042022-F.webp",
     descripcion: "Pantalla Full HD a 75Hz ideal para uso diario.",
     stock: 3,
-    tags: ["Monitores", "Pantallas"]
+    tags: ["monitores"]
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ export const productos = [
     imagen: "https://http2.mlstatic.com/D_NQ_NP_2X_661489-MLA49783544128_042022-F.webp",
     descripcion: "Monitor 144Hz con panel IPS para gaming competitivo.",
     stock: 4,
-    tags: ["Monitores", "Gaming"]
+    tags: ["monitores"]
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ export const productos = [
     imagen: "https://http2.mlstatic.com/D_NQ_NP_2X_661489-MLA49783544128_042022-F.webp",
     descripcion: "Pantalla curva con gran inmersión para juegos y multimedia.",
     stock: 2,
-    tags: ["Monitores", "Pantallas"]
+    tags: ["monitores"]
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ export const productos = [
     imagen: "https://http2.mlstatic.com/D_NQ_NP_2X_661489-MLA49783544128_042022-F.webp",
     descripcion: "Monitor moderno con diseño sin bordes y excelente color.",
     stock: 0,
-    tags: ["Monitores"]
+    tags: ["monitores"]
   },
   {
     id: 9,
@@ -78,7 +78,7 @@ export const productos = [
     imagen: "https://http2.mlstatic.com/D_NQ_NP_2X_661489-MLA49783544128_042022-F.webp",
     descripcion: "GPU ideal para gaming en alta calidad.",
     stock: 3,
-    tags: ["Placas de video", "Gaming"]
+    tags: ["placas"]
   },
   {
     id: 10,
@@ -87,7 +87,7 @@ export const productos = [
     imagen: "https://http2.mlstatic.com/D_NQ_NP_2X_661489-MLA49783544128_042022-F.webp",
     descripcion: "Placa de video de última generación con alto rendimiento.",
     stock: 2,
-    tags: ["Placas de video", "Gaming"]
+    tags: ["placas"]
   },
   {
     id: 11,
@@ -96,7 +96,7 @@ export const productos = [
     imagen: "https://http2.mlstatic.com/D_NQ_NP_2X_661489-MLA49783544128_042022-F.webp",
     descripcion: "Excelente rendimiento para gaming en 1080p.",
     stock: 6,
-    tags: ["Placas de video"]
+    tags: ["placas"]
   },
   {
     id: 12,
@@ -105,6 +105,6 @@ export const productos = [
     imagen: "https://http2.mlstatic.com/D_NQ_NP_2X_661489-MLA49783544128_042022-F.webp",
     descripcion: "Placa básica ideal para PCs de oficina.",
     stock: 0,
-    tags: ["Placas de video"]
+    tags: ["placas"]
   }
 ];

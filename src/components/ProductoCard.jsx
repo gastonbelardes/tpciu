@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function ProductoCard({ p, agregarAlCarrito }) {
     return (
@@ -24,7 +25,7 @@ function ProductoCard({ p, agregarAlCarrito }) {
                             disabled={p.stock === 0}
                             className="w-100"
                         >
-                            {p.stock > 0 ? "Comprar" : "Sin stock"}
+                            {p.stock > 0 ? "Ver Detalle" : "Sin stock"}
                         </Button>
                     </Link>
 
