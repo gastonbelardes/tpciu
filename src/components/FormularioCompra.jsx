@@ -91,7 +91,7 @@ function FormularioCompra({ carrito, vaciarCarrito }) {
                         value={datos.nombre}
                         onChange={manejarCambio}
                     />
-                    <small className="text-danger">
+                    <small className="text-danger fw-bold">
                         {errores.nombre}
                     </small>
                 </Form.Group>
@@ -104,7 +104,7 @@ function FormularioCompra({ carrito, vaciarCarrito }) {
                         value={datos.email}
                         onChange={manejarCambio}
                     />
-                    <small className="text-danger">
+                    <small className="text-danger fw-bold">
                         {errores.email}
                     </small>
                 </Form.Group>
@@ -117,7 +117,7 @@ function FormularioCompra({ carrito, vaciarCarrito }) {
                         value={datos.telefono}
                         onChange={manejarCambio}
                     />
-                    <small className="text-danger">
+                    <small className="text-danger fw-bold">
                         {errores.telefono}
                     </small>
                 </Form.Group>
@@ -130,7 +130,7 @@ function FormularioCompra({ carrito, vaciarCarrito }) {
                         value={datos.direccion}
                         onChange={manejarCambio}
                     />
-                    <small className="text-danger">
+                    <small className="text-danger fw-bold">
                         {errores.direccion}
                     </small>
                 </Form.Group>
@@ -158,6 +158,9 @@ function FormularioCompra({ carrito, vaciarCarrito }) {
                         value={datos.mensaje}
                         onChange={manejarCambio}
                     />
+                    <small className="text-danger fw-bold">
+                        {errores.mensaje}
+                    </small>
                 </Form.Group>
 
                 <Button type="submit">
