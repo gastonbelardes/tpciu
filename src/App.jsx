@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Toast, ToastContainer } from 'react-bootstrap';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
@@ -15,7 +15,17 @@ import DetalleProducto from "./pages/DetalleProducto";
 
 function App() {
 
-    const [carrito, setCarrito] = useState([]);
+    
+    const [carrito, setCarrito] = useState(() => {
+        const data = localStorage.getItem("carrito");
+        return data ? JSON.parse(data) : [];
+    });
+    
+    useEffect(() => {
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+    }, [carrito]);
+
+
     const [mensajeToast, setMensajeToast] = useState("");
     const [mostrarToast, setMostrarToast] = useState(false);
 
