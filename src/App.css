@@ -1,3 +1,7 @@
+html {
+    margin: 0;
+    padding: 0
+}
 :root {
     --color-principal: #76b900;
     --color-secundario: #1a1a1a;
@@ -6,7 +10,12 @@
 }
 
 body {
-    background-color: var(--color-fondo);
+    margin: 0;
+    background-image: url('/setup.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     color: var(--color-texto);
 }
 
@@ -33,6 +42,10 @@ body {
     color: #ffffff !important;
     
 }
+.productoNombre{
+    color:black;
+    font-weight: bold;
+}
 
 .navbar::after {
     content: '';
@@ -45,11 +58,37 @@ body {
     background-size: 200% 100%;
     animation: lucesRGB 6s linear infinite;
 }
+.texto{
+    color:lightgreen
+}
 
 .promo{
     font-size: 24px;
 }
 
+.promoBancaria{
+    background-color: transparent;
+    transition: transform 0.2s ease;
+  
+}
+.promoBancaria:hover{
+    transform: scale(1.05);
+}
+.bienvenida{
+    color: lightgreen;
+    font-size: 48px;
+    font-weight: bold;
+}
+.contactanos{
+    border-style: none;
+    overflow: hidden;   
+    background-color: transparent ;
+    color: lightgreen;
+}
+
+.encontranos{
+    background-color: transparent;
+}
 @keyframes lucesRGB {
     0% { background-position: 100% 0; }
     100% { background-position: -100% 0; }

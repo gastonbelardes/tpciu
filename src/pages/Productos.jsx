@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Badge, Container, Row, Col, Form } from "react-bootstrap";
-import { useSearchParams,Link } from 'react-router-dom';
+import { useSearchParams} from 'react-router-dom';
 import ProductoCard from "../components/ProductoCard";
 import { productos } from "../data/productos";
 
@@ -30,7 +30,7 @@ function Productos({ agregarAlCarrito }) {
     return (
         <Container className="mt-4">
             <div className="text-center mb-4">
-                <h2>
+                <h2 className="texto">
                     Catálogo{" "}
                     <Badge bg="primary" className="btn-primary">
                         {productosFiltrados.length}

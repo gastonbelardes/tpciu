@@ -1,6 +1,6 @@
 .product-card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    
+
     border: 1px solid #e0e0e0; 
 }
 

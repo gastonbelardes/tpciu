@@ -1,14 +1,15 @@
-import React from 'react';
 import { Carousel, Container, Row, Col , Card,Badge,Image} from 'react-bootstrap';
 import "../App.css"
 
 
 function Inicio() {
     return (
+        <div>
+
         <Container className="mt-5">
-            <h1 className="text-center mb-4">Bienvenidos a Tech Store</h1>
+            <h1 className="text-center mb-4 bienvenida">¡Bienvenidos a Tech Store!</h1>
             {/* EL CAROUSEL DE OFERTAS/ITEMS DESTACADOS, SI NO LE GUSTA, LO BORRAMOS */}
-            <Carousel className="shadow-lg rounded" >
+            <Carousel className="shadow-lg rounded mt-4" >
                 <Carousel.Item>
                     {/* Reemplazamos src por la imagen que vayamos a usar */}
                     <img className="d-block w-100" src="./nvidia5090.jpg" alt="Oferta 1" />
@@ -47,7 +48,7 @@ function Inicio() {
             </Carousel>
             <Row className='mt-4'>
                 <Col md={4}>
-                    <Card>
+                    <Card className='promoBancaria'>
                         <Card.Body>
                             <Row>
                                 <Badge bg='secondary' className="badge-custom">
@@ -65,7 +66,7 @@ function Inicio() {
                     </Card>
                 </Col>
                 <Col md={4}>
-                    <Card>
+                    <Card className='promoBancaria'>
                         <Card.Body>
                             <Row>
                                 <Badge bg='secondary' className="badge-custom">
@@ -73,7 +74,7 @@ function Inicio() {
                                 </Badge>
                             </Row>
                             <Row className='d-flex justify-content-center'>
-                                <Image src="https://www.sirchandler.com.ar/wp-content/uploads/2019/06/logo-bbva-01-700x408.png"
+                                <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Logo_Banco_Credicoop.svg/3840px-Logo_Banco_Credicoop.svg.png"
                                 style={{width:"350px", height:"200px"}}></Image> 
                                 <Badge pill bg='dark' className='d-flex justify-content-center align-items-center w-100 p-3'><p className='promo'>12 cuotas sin interés</p></Badge>
                                 
@@ -83,7 +84,7 @@ function Inicio() {
                     </Card>
                 </Col>
                 <Col md={4} >
-                    <Card>
+                    <Card className='promoBancaria'>
                         <Card.Body>
                             <Row>
                                 <Badge bg='secondary' className="badge-custom">
@@ -91,9 +92,9 @@ function Inicio() {
                                 </Badge>
                             </Row>
                             <Row className='d-flex justify-content-center'>
-                                <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Logo_Banco_Hipotecario.svg/330px-Logo_Banco_Hipotecario.svg.png"
+                                <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Mercado_Pago.svg/3840px-Mercado_Pago.svg.png"
                                 style={{width:"350px", height:"200px"}}></Image>
-                                <Badge pill bg='dark' className='d-flex justify-content-center align-items-center w-100 p-3'><p className='promo'>12 cuotas sin interés</p></Badge> 
+                                <Badge pill bg='dark' className='d-flex justify-content-center align-items-center w-100 p-3'><p className='promo'>10% de descuento</p></Badge> 
                                 
                             </Row>
                             
@@ -102,6 +103,7 @@ function Inicio() {
                 </Col>
             </Row>
         </Container>
+        </div>
     );
 }
 

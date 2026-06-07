@@ -11,7 +11,7 @@ function DetalleProducto({ agregarAlCarrito }) {
   );
 
   if (!producto) {
-    return <h2>Producto no encontrado</h2>;
+    return <h2 className="texto">Producto no encontrado</h2>;
   }
 
   const [imagenSeleccionada, setImagenSeleccionada] = useState(
@@ -27,7 +27,7 @@ function DetalleProducto({ agregarAlCarrito }) {
         </Button>
       </Link>
 
-      <h2>{producto.nombre}</h2>
+      <h2 className="productoNombre">{producto.nombre}</h2>
 
       {/* Imagen principal */}
       <img
@@ -67,11 +67,11 @@ function DetalleProducto({ agregarAlCarrito }) {
         ))}
       </div>
 
-      <h3 className="mt-3">${producto.precio}</h3>
+      <h3 className="mt-3 texto">${producto.precio}</h3>
 
-      <p>{producto.descripcion}</p>
+      <p className="texto">{producto.descripcion}</p>
 
-      <p>
+      <p className="texto">
         <strong>Categorías:</strong> {producto.tags.join(", ")}
       </p>
 

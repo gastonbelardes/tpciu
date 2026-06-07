@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Toast, ToastContainer } from 'react-bootstrap';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
@@ -104,9 +104,9 @@ function App() {
     const vaciarCarrito = () => {
         setCarrito([]);
     };
-
+    
     return (
-        <>
+        <div>
             <MiNavbar carrito={carrito} />
 
             <ToastContainer
@@ -178,7 +178,7 @@ function App() {
 
 
             <Footer />
-        </>
+        </div>
     );
 }
 

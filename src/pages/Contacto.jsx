@@ -62,7 +62,7 @@ function Contacto() {
         <Container>
             <Row className="mb-5">
                 <Col>
-                    <Card className="text-center">
+                    <Card className="text-center contactanos">
                         <Card.Body>
                             <Card.Title>
                                 <h1>¡Contactanos!</h1>
@@ -141,7 +141,7 @@ function Contacto() {
                 </Col>
 
                 <Col md={4} className="ps-4 text-center">
-                    <Card>
+                    <Card className="encontranos">
                         <Card.Body>
                             <Row className="mb-4">
                                 <Badge pill bg="primary" className="badge-custom">

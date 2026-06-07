@@ -11,12 +11,12 @@ function VistaCarrito({ carrito, eliminarDelCarrito, sumarCantidad, restarCantid
 
     return (
         <Container className="mt-5">
-            <h2>Tu Changuito de Compras</h2>
+            <h2 className='texto'>Tu Changuito de Compras</h2>
 
             
             {carrito.length === 0 ? (
                 <div className="text-center mt-5">
-                    <h4>Tu carrito está vacío</h4>
+                    <h4 className='texto'>Tu carrito está vacío</h4>
                 </div>
             ) : (
                 <>
