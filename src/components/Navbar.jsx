@@ -60,27 +60,27 @@ function MiNavbar({ carrito = [] }) {
             </Navbar>
 
             {/* MENU LATERAL (OFFCANVAS) CON LAS CATEGORÍAS */}
-            <Offcanvas show={mostrarMenu} onHide={handleClose} placement="start">
+            <Offcanvas show={mostrarMenu} onHide={handleClose} placement="start" style={{ backgroundColor: '#60626b' }}>
                 <Offcanvas.Header closeButton>
-                    <Offcanvas.Title className="fw-bold">Categorías</Offcanvas.Title>
+                    <Offcanvas.Title className="fw-bold texto">Categorías</Offcanvas.Title>
                 </Offcanvas.Header>
                 
-                <Offcanvas.Body className="p-0">
+                <Offcanvas.Body className="p-0"  >
                     <ListGroup variant="flush">
                         
-                        <ListGroup.Item action as={Link} to="/productos?categoria=monitores" onClick={handleClose}>
+                        <ListGroup.Item action as={Link} to="/productos?categoria=monitores" onClick={handleClose} style={{ backgroundColor: '#373a46' }} className='texto'>
                             🖥️ Monitores y Pantallas
                         </ListGroup.Item>
                         
-                        <ListGroup.Item action as={Link} to="/productos?categoria=perifericos" onClick={handleClose}>
+                        <ListGroup.Item action as={Link} to="/productos?categoria=perifericos" onClick={handleClose} className='texto' style={{ backgroundColor: '#373a46' }}>
                             ⌨️ Periféricos
                         </ListGroup.Item>
                         
-                        <ListGroup.Item action as={Link} to="/productos?categoria=placas" onClick={handleClose}>
+                        <ListGroup.Item action as={Link} to="/productos?categoria=placas" onClick={handleClose} style={{ backgroundColor: '#373a46' }} className='texto'>
                             🎮 Placas de Video
                         </ListGroup.Item>
                         
-                        <ListGroup.Item action as={Link} to="/productos" onClick={handleClose}>
+                        <ListGroup.Item action as={Link} to="/productos" onClick={handleClose} className='texto' style={{ backgroundColor: '#373a46' }}>
                             🔄 Ver todo el catálogo
                         </ListGroup.Item>
 
