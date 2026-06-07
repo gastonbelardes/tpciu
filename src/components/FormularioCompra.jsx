@@ -73,7 +73,7 @@ function FormularioCompra({ carrito, vaciarCarrito }) {
     return (
         <Container className="mt-4">
 
-            <h2>Finalizar Compra</h2>
+            <h2 className="texto">Finalizar Compra</h2>
 
             {compraRealizada && (
                 <Alert variant="success">
@@ -81,9 +81,9 @@ function FormularioCompra({ carrito, vaciarCarrito }) {
                 </Alert>
             )}
 
-            <Form onSubmit={manejarSubmit}>
+            <Form onSubmit={manejarSubmit} className="texto">
 
-                <Form.Group className="mb-3">
+                <Form.Group className="mb-3" >
                     <Form.Label>Nombre y apellido</Form.Label>
                     <Form.Control
                         type="text"

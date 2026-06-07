@@ -57,7 +57,7 @@ function VistaCarrito({ carrito, eliminarDelCarrito, sumarCantidad, restarCantid
                     </Table>
 
                     <div className="d-flex justify-content-end mt-4">
-                        <h3>Total a pagar: ${totalPagar}</h3>
+                        <h3 className='texto'>Total a pagar: ${totalPagar}</h3>
                     </div>
                     <div className="d-flex justify-content-end mt-3">
                         <Button
