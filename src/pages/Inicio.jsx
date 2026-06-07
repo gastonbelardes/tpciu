@@ -8,7 +8,7 @@ function Inicio() {
         <Container className="mt-5">
             <h1 className="text-center mb-4">Bienvenidos a Tech Store</h1>
             {/* EL CAROUSEL DE OFERTAS/ITEMS DESTACADOS, SI NO LE GUSTA, LO BORRAMOS */}
-            <Carousel className="shadow-lg rounded">
+            <Carousel className="shadow-lg rounded" >
                 <Carousel.Item>
                     {/* Reemplazamos src por la imagen que vayamos a usar */}
                     <img className="d-block w-100" src="./nvidia5090.jpg" alt="Oferta 1" />
@@ -45,7 +45,7 @@ function Inicio() {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-            <Row>
+            <Row className='mt-4'>
                 <Col md={4}>
                     <Card>
                         <Card.Body>
@@ -54,9 +54,10 @@ function Inicio() {
                                     <h4>Todos los dias</h4>
                                 </Badge>
                             </Row>
-                            <Row>
+                            <Row className='d-flex justify-content-center'>
                                 <Image src="https://www.adeba.com.ar/wp-content/uploads/2018/01/galicia.png"
-                                style={{width:"250px", height:"100px"}}></Image> <p>12 cuotas sin interés</p>
+                                style={{width:"350px", height:"200px"}}></Image>
+                                <Badge pill bg='dark' className='d-flex justify-content-center align-items-center w-100 p-3'><p className='promo'>12 cuotas sin interés</p></Badge>
                                 
                             </Row>
                             
@@ -68,29 +69,31 @@ function Inicio() {
                         <Card.Body>
                             <Row>
                                 <Badge bg='secondary' className="badge-custom">
-                                    <h4>Todos los dias</h4>
+                                    <h4>Jueves</h4>
                                 </Badge>
                             </Row>
-                            <Row>
+                            <Row className='d-flex justify-content-center'>
                                 <Image src="https://www.sirchandler.com.ar/wp-content/uploads/2019/06/logo-bbva-01-700x408.png"
-                                style={{width:"250px", height:"100px"}}></Image> <p>12 cuotas sin interés</p>
+                                style={{width:"350px", height:"200px"}}></Image> 
+                                <Badge pill bg='dark' className='d-flex justify-content-center align-items-center w-100 p-3'><p className='promo'>12 cuotas sin interés</p></Badge>
                                 
                             </Row>
                             
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col md={4}>
+                <Col md={4} >
                     <Card>
                         <Card.Body>
                             <Row>
                                 <Badge bg='secondary' className="badge-custom">
-                                    <h4>Todos los dias</h4>
+                                    <h4>Sábados y Domingos</h4>
                                 </Badge>
                             </Row>
-                            <Row>
+                            <Row className='d-flex justify-content-center'>
                                 <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Logo_Banco_Hipotecario.svg/330px-Logo_Banco_Hipotecario.svg.png"
-                                style={{width:"250px", height:"100px"}}></Image> <p>12 cuotas sin interés</p>
+                                style={{width:"350px", height:"200px"}}></Image>
+                                <Badge pill bg='dark' className='d-flex justify-content-center align-items-center w-100 p-3'><p className='promo'>12 cuotas sin interés</p></Badge> 
                                 
                             </Row>
                             
