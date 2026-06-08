@@ -1,6 +1,6 @@
 import { Carousel, Container, Row, Col , Card,Badge,Image} from 'react-bootstrap';
 import "../App.css"
-
+import { Link } from 'react-router-dom';
 
 function Inicio() {
     return (
@@ -11,31 +11,37 @@ function Inicio() {
             {/* EL CAROUSEL DE OFERTAS/ITEMS DESTACADOS, SI NO LE GUSTA, LO BORRAMOS */}
             <Carousel className="shadow-lg rounded mt-4" >
                 <Carousel.Item>
-                    {/* Reemplazamos src por la imagen que vayamos a usar */}
-                    <img className="d-block w-100" src="./nvidia5090.jpg" alt="Oferta 1" />
+                    <Link to="/productos?categoria=placas">
+                        <img className="d-block w-100" src="./nvidia5090.jpg" alt="Oferta 1" style={{ cursor: "pointer" }} />
+                    </Link>
+
                     <Carousel.Caption>
                         <h3>Nvidia RTX 5090</h3>
                         <p>La GeForce más potente jamás creada.</p>
                     </Carousel.Caption>
-                </Carousel.Item>
+            </Carousel.Item>
 
-                <Carousel.Item>
-                    {/* Reemplazamos src por la imagen que vayamos a usar */}
-                    <img className="d-block w-100" src="./teclado.jpg" alt="Oferta 2" />
-                    <Carousel.Caption>
-                        <h3>Teclados Mecánicos</h3>
-                        <p>La precisión que necesitás para tus partidas.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
+            <Carousel.Item>
+                <Link to="/productos?categoria=perifericos">
+                    <img className="d-block w-100" src="./teclado.jpg" alt="Oferta 2" style={{ cursor: "pointer" }} />
+                </Link>
 
-                <Carousel.Item>
-                    {/* Reemplazamos src por la imagen que vayamos a usar */}
-                    <img className="d-block w-100" src="./monitor.avif" alt="Oferta 2" />
-                    <Carousel.Caption>
-                        <h3>Monitores MSI Pro</h3>
-                        <p>Calidad visual para largas jornadas de estudio y gaming.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
+                <Carousel.Caption>
+                    <h3>Teclados Mecánicos</h3>
+                    <p>La precisión que necesitás para tus partidas.</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+                <Link to="/productos?categoria=monitores">
+                    <img className="d-block w-100" src="./monitor.avif" alt="Oferta 3" style={{ cursor: "pointer" }} />
+                </Link>
+
+                <Carousel.Caption>
+                    <h3>Monitores MSI Pro</h3>
+                    <p>Calidad visual para largas jornadas de estudio y gaming.</p>
+                </Carousel.Caption>
+            </Carousel.Item>
 
                 <Carousel.Item>
                     {/* Reemplazamos src por la imagen que vayamos a usar */}

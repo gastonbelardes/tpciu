@@ -1,0 +1,34 @@
+[33mde6607c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Cambio color del menu desplegable del navbar
+[33m7626394[m cambio la imagen de fondo y algunos colores de letras
+[33mf7311fa[m agrego imagen de fondo y cambio el color de varias cosas para que se vean bien
+[33m192ef5e[m Agrego margenes y mas decoracion en inicio
+[33m46c8ad5[m actualiza la pagina y no se me borra el carrito
+[33mc1d033b[m haciendo el readme
+[33mc7e36d8[m pequeño arreglo de consistencia
+[33m65d36e7[m validaciones contacto
+[33mc2047c7[m gradient navbar
+[33m43d7f03[m logo, un poco de css
+[33m0c54e6f[m css para contacto, catalogo, productocard
+[33m36adc4d[m imagenes para el catalogo
+[33m059b86d[m Agrego imagenes reales al carrusel y algunas promociones bancarias, falta estilizarlo
+[33m9db30c1[m agregado pagina detalle del producto
+[33m701387e[m agrego mas productos y la pagina de los detalles
+[33m1e79032[m Agrando letra en contacto
+[33m22d341e[m Algunos cambios en Contacto
+[33m64ab5cf[m Agrego nombre de la tienda en navbar e inicio
+[33m77f5671[m Resuelvo conflictos
+[33macee4a4[m Agrego footer
+[33m0b0dccc[m Agrego footer
+[33mebccf6b[m reenombre un par de cosas
+[33mc02c806[m boton productos desplegable
+[33m05064c8[m buscador fix
+[33md6680fe[m Un poco de estilo al aside de contacto
+[33m24d3a5c[m ubicacion agregada en la pagina de contacto
+[33m4ec1da2[m Algunos avances en pagina de contacto
+[33mf35fe92[m page contacto creada y agregada a las rutas y navbar
+[33mc65e67d[m Agrego formulario de compra y ruta checkout
+[33mbc5ebf9[m Header ahora es pages/Navbar.jsx como pide el enunciado
+[33ma88594e[m pages/Inicio.jsx agregado y enruteado, SIN TERMINAR.
+[33mf1be0d5[m contenido ahora es pages/Productos.jsx como pide el enunciado
+[33m1518b74[m zarpado commit papa, esta todo comentado
+[33m8a76c89[m carrito, busqueda, toast funcionando
