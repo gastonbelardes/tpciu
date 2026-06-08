@@ -1,6 +1,7 @@
 // src/components/Footer.jsx
 
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
@@ -16,9 +17,33 @@ function Footer() {
 
                     <Col md={4}>
                         <h5>Navegación</h5>
-                        <p>Inicio</p>
-                        <p>Productos</p>
-                        <p>Contacto</p>
+
+                        <p>
+                            <Link
+                                to="/"
+                                className="text-light text-decoration-none"
+                            >
+                                Inicio
+                            </Link>
+                        </p>
+
+                        <p>
+                            <Link
+                                to="/productos"
+                                className="text-light text-decoration-none"
+                            >
+                                Productos
+                            </Link>
+                        </p>
+
+                        <p>
+                            <Link
+                                to="/contacto"
+                                className="text-light text-decoration-none"
+                            >
+                                Contacto
+                            </Link>
+                        </p>
                     </Col>
 
                     <Col md={4}>

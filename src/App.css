@@ -93,3 +93,7 @@ body {
     0% { background-position: 100% 0; }
     100% { background-position: -100% 0; }
 }
+.carousel-caption h3,
+.carousel-caption p {
+    text-shadow: 2px 2px 6px black;
+}
