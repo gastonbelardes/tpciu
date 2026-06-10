@@ -17,6 +17,7 @@ Tech Store es una plataforma donde los usuarios pueden explorar y comprar produc
 -  CSS
 -  HTML
 -  React Bootstrap
+-  JavaScript
 
 ---
 ## 📦 Instalación
