@@ -16,6 +16,7 @@ Tech Store es una plataforma donde los usuarios pueden explorar y comprar produc
 -  Node.js
 -  CSS
 -  HTML
+-  React Bootstrap
 
 ---
 ## 📦 Instalación
@@ -23,6 +24,7 @@ Tech Store es una plataforma donde los usuarios pueden explorar y comprar produc
 ```bash
 git clone https://github.com/gastonbelardes/tpciu.git
 cd tpciu
+code .
 npm install
 npm run dev
 ```

@@ -8,7 +8,7 @@ function Inicio() {
 
         <Container className="mt-5">
             <h1 className="text-center mb-4 bienvenida">¡Bienvenidos a Tech Store!</h1>
-            {/* EL CAROUSEL DE OFERTAS/ITEMS DESTACADOS, SI NO LE GUSTA, LO BORRAMOS */}
+           
             <Carousel className="shadow-lg rounded mt-4" >
                 <Carousel.Item>
                     <Link to="/productos?categoria=placas">
@@ -44,7 +44,7 @@ function Inicio() {
             </Carousel.Item>
 
                 <Carousel.Item>
-                    {/* Reemplazamos src por la imagen que vayamos a usar */}
+                   
                     <img className="d-block w-100" src="./envios.jpg" alt="Oferta 3" />
                     <Carousel.Caption>
                         <h3>Envíos a todo el país</h3>

@@ -3,10 +3,10 @@ import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./ProductoCard.css"; 
 
-function ProductoCard({ p, agregarAlCarrito }) {
+function ProductoCard({ p }) {
     return (
         <Card className="product-card h-100 shadow-sm">
-            {/* Imagen(falta) */}
+          
             <Card.Img
                 className="product-img"
                 variant="top"
